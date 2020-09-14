@@ -185,7 +185,7 @@ linkText.addEventListener('input', e => {
   newLink.style.marginTop = '7px'
   personalInfo.style.paddingBottom = '7px'
   personalInfo.style.marginBottom = '7px'
-  personalInfo.style.borderBottom = '1px solid #202121'
+  personalInfo.style.borderBottom = '1px solid #c5c5c5'
 })
 
 // add URL to personal text on bottom of table
