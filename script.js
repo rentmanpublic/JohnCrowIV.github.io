@@ -182,8 +182,8 @@ linkText.addEventListener('input', e => {
   newLink.style.color = '#202121'
   newLink.style.fontSize = '14px'
   newLink.style.fontFamily = 'Arial'
-  newLink.style.marginTop = '7px'
-  personalInfo.style.paddingBottom = '7px'
+  newLink.style.marginTop = '10px'
+  personalInfo.style.paddingBottom = '10px'
   personalInfo.style.marginBottom = '7px'
   personalInfo.style.borderBottom = '1px solid #c5c5c5'
 })
