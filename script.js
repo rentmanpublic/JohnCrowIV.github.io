@@ -1,3 +1,5 @@
+
+
 let activeName = document.getElementById("name");
 let activeRole = document.getElementById("role");
 let activeImage = document.getElementById("active-image")
@@ -178,7 +180,7 @@ linkText.addEventListener('input', e => {
   newLink.innerText = input
   newLink.style.textDecoration = 'none'
   newLink.style.fontSize = '16px'
-  newLink.style.fontFamily = "Arial"
+  newLink.style.fontFamily = 'Arial'
 })
 
 // add URL to personal text on bottom of table
