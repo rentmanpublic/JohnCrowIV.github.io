@@ -178,6 +178,7 @@ linkText.addEventListener('input', e => {
   newLink.innerText = input
   newLink.style.textDecoration = 'none'
   newLink.style.fontSize = '16px'
+  newLink.style.fontFamily = "Arial"
 })
 
 // add URL to personal text on bottom of table
