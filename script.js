@@ -180,7 +180,7 @@ linkText.addEventListener('input', e => {
   personalInfo.insertAdjacentElement('afterend', newLink);
   newLink.innerText = input
   newLink.style.color = '#202121'
-  newLink.style.fontSize = '14px'
+  newLink.style.fontSize = '12px'
   newLink.style.fontFamily = 'Arial'
   newLink.style.marginTop = '10px'
   personalInfo.style.paddingBottom = '10px'
