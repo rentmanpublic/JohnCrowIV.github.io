@@ -183,7 +183,6 @@ linkText.addEventListener('input', e => {
   newLink.style.fontSize = '14px'
   newLink.style.fontFamily = 'Arial'
   newLink.style.marginTop = '7px'
-  newLink.style.fontWeight = 'bold'
   personalInfo.style.paddingBottom = '7px'
   personalInfo.style.marginBottom = '7px'
   personalInfo.style.borderBottom = '1px solid #202121'
