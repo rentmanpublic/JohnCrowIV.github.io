@@ -127,7 +127,7 @@ nameInput.addEventListener('input', e => {
 
   // update displayed information in signature
   activeName.innerText = activeColleague.name;
-  activeRole.innerText = activeColleague.department;
+  activeRole.innerText = activeColleague.department + " | Rentman";
   activeImage.src = activeColleague.image;
 });
 
