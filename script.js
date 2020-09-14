@@ -6,6 +6,7 @@ let activeImage = document.getElementById("active-image")
 let activePhone = document.getElementById("phone");
 let facebook = document.getElementById("facebook")
 let signature = document.getElementById("signature")
+let personalInfo = document.getElementById("personalinfo")
 
 // input fields
 const userForm = document.querySelector('#user-form');
@@ -178,9 +179,14 @@ linkText.addEventListener('input', e => {
   console.log(input);
   signature.insertAdjacentElement('afterend', newLink);
   newLink.innerText = input
-  newLink.style.textDecoration = 'none'
-  newLink.style.fontSize = '16px'
+  newLink.style.color = '#202121'
+  newLink.style.fontSize = '14px'
   newLink.style.fontFamily = 'Arial'
+  newLink.style.marginTop = '7px'
+  newLink.style.fontWeight = 'bold'
+  personalInfo.style.paddingBottom = '7px'
+  personalInfo.style.marginBottom = '7px'
+  personalInfo.style.borderBottom = '1px solid #202121'
 })
 
 // add URL to personal text on bottom of table
