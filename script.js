@@ -177,7 +177,7 @@ roleInput.addEventListener('input', e => {
 linkText.addEventListener('input', e => {
   let input = e.target.value;
   console.log(input);
-  signature.insertAdjacentElement('afterend', newLink);
+  personalInfo.insertAdjacentElement('afterend', newLink);
   newLink.innerText = input
   newLink.style.color = '#202121'
   newLink.style.fontSize = '14px'
