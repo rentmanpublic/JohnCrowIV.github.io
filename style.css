@@ -52,3 +52,16 @@ legend {
 #signature {
   display: none;
 }
+
+#active-image {
+    object-fit: cover;
+}
+
+.footer_1_social_icon {
+    max-width: 1.5rem;
+}
+
+a.footer_1_social_link.w-inline-block {
+    display: inline-block;
+    max-width: 25%;
+}

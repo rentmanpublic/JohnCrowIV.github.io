@@ -75,42 +75,31 @@ const locals = [{
 // COLLEAGUE INFO TO ARRAY OBJECT
 
 // push colleague names into object of colleagues Array
-let colleaguesNames = document.getElementsByClassName("c-colleagues__name");
+let colleaguesNames = document.querySelectorAll("h4");
 
 for (i = 0; i < colleaguesNames.length; i++) {
   colleagues.push({name:colleaguesNames[i].innerText});
 };
 
 // push colleague functions into object of colleagues Array
-let colleaguesFunction = document.getElementsByClassName("c-colleagues__function");
+let colleaguesFunction = document.getElementsByClassName("card-subtext_wrap");
 
 for (i = 0; i < colleaguesFunction.length; i++) {
   colleagues[i].department = colleaguesFunction[i].innerText;
 };
 
-let colleaguesImage = document.getElementsByClassName("c-colleagues__image");
-
-const imageURLStyle = []
-
-// Get CSS styling notation of image
-for (i = 0; i < colleaguesImage.length; i++) {
-  imageURLStyle.push(colleaguesImage[i].style.backgroundImage)
-};
+let colleaguesImage = document.getElementsByClassName("card-media_image");
 
 const imageURL = []
 
-// Extract the URL of the image styling notation
-for (i = 0; i < imageURLStyle.length; i++) {
-  let x = imageURLStyle[i];
-  let splitStart =  x.indexOf("uploads") - 1;
-  let splitEnd = x.indexOf(")") - 1;
-  let splitResult = x.slice(splitStart,splitEnd);
-  imageURL.push(splitResult);
+// Get CSS styling notation of image
+for (i = 0; i < colleaguesImage.length; i++) {
+  imageURL.push(colleaguesImage[i].src)
 };
 
-// push URL into colleagues object array 
+// push URL into colleagues object array
 for(i = 0; i < imageURL.length; i++) {
-  colleagues[i].image = "https://rentman.io" + imageURL[i];
+  colleagues[i].image = imageURL[i];
 };
 
 function capitalizeFirstLetter(string) {
