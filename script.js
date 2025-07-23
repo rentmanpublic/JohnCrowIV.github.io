@@ -75,7 +75,7 @@ const locals = [{
 // COLLEAGUE INFO TO ARRAY OBJECT
 
 // push colleague names into object of colleagues Array
-let colleaguesNames = document.querySelectorAll("h4");
+let colleaguesNames = document.querySelectorAll("h3");
 
 for (i = 0; i < colleaguesNames.length; i++) {
   colleagues.push({name:colleaguesNames[i].innerText});
